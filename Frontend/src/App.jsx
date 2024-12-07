@@ -9,8 +9,8 @@ const App = () => {
         <>
         <Router>
             <Routes>
-                <Route path="/chat/react" element={<UserRegistration/>}></Route>
-                <Route path="/chat/react/chat" element={<Chat/>}></Route>
+                <Route path="/" element={<UserRegistration/>}></Route>
+                <Route path="/chat" element={<Chat/>}></Route>
             </Routes>
         </Router>
         </>

@@ -45,7 +45,7 @@ export default function UserRegistration(){
       setLoading(true);
       setTimeout(()=>{
         setLoading(false);
-        navigate('/chat/react/chat',{state:data});
+        navigate('/chat',{state:data});
         
       },2000)
     
