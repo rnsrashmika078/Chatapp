@@ -1,7 +1,11 @@
-const express = require('express');
-const app = express();
-
-app.use("/",(req,res) =>{
-    res.send("server is running!");
-});
-app.listen(5000,console.log("server has stated on port 5000!"));
+import { Server } from 'socket.io'; 
+const io = new Server(3000); 
+io.on('connection', (socket) => { 
+console.log('A user connected'); 
+socket.on('message', (msg) => { 
+io.emit('message', msg); 
+}); 
+socket.on('disconnect', () => { 
+console.log('A user disconnected'); 1  
+}); 
+}); 
