@@ -26,7 +26,7 @@ const Chat = () => {
 
   useEffect(() => { 
    
-    const newSocket = io("https://chatapp-server-pink-three.vercel.app", {
+    const newSocket = io("https://chatapp-server-pink-three.vercel.app/", {
       transports: ["websocket"], // Ensures WebSocket is used
       withCredentials: true,    // Allows cookies and credentials
     });

@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for the React client URL
 app.use(cors({
-  origin: 'https://chatapp-client-gamma.vercel.app',  // Replace with your React client URL
+  origin: 'https://chatapp-client-37pu5r09o-rashmika-siriwardhanas-projects.vercel.app/',  // Replace with your React client URL
   methods: ['GET', 'POST'],
 }));
 
@@ -15,7 +15,7 @@ app.use(cors({
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'https://chatapp-client-gamma.vercel.app',  // Same client URL here
+    origin: 'https://chatapp-client-37pu5r09o-rashmika-siriwardhanas-projects.vercel.app/',  // Same client URL here
     methods: ['GET', 'POST'],
   }
 });
