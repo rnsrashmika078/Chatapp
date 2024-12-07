@@ -8,7 +8,7 @@ const App = () =>{
     <>
       <Router>
         <Routes>
-          <Route path="/react" element={<Newcomp/>} >
+          <Route path="/" element={<Newcomp/>} >
 
           </Route>
         </Routes>
