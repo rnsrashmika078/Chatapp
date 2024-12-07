@@ -6,10 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // port : 5173,
   // host : true,
-  base : "/chat/react",
-  build: {
-    outDir: 'C:/xampp/htdocs/chat/react', 
-  },
- 
 
 })
